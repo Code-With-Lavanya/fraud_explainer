@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: #080b10;
+  color: #e7edf4;
+}
+
+a {
+  color: inherit;
+}
+
+/* Used by the transaction detail drawer (components/transactions/TransactionDrawer.jsx) */
+@keyframes slideIn {
+  from {
+    transform: translateX(24px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.txn-drawer-panel {
+  animation: slideIn 0.22s ease-out;
+}
+
+/* Used by the "processing" spinner in the simulator pipeline
+   (components/simulator/PipelineExecution.jsx) */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Thin, dark scrollbars to match the panel styling throughout the app */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1d2733;
+  border-radius: 4px;
+}
