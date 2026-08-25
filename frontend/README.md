@@ -37,7 +37,7 @@ services/       api.js — every network-shaped call goes through here. This is
 ## Backend
 
 This app is wired to the real FastAPI ML backend (calibrated XGBoost +
-SHAP + Gemini) — not a mock. Set `NEXT_PUBLIC_API_BASE_URL` in `.env.local`
+SHAP + Gemini) — not a mock. Set `API_BASE_URL` in `.env.local`
 to your FastAPI server (defaults to `http://localhost:8000`; see
 `.env.local`). Start the backend first, then `npm run dev`.
 

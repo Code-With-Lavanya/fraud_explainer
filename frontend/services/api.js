@@ -13,7 +13,7 @@
  * NOT imported anywhere in this file or in the production data path.
  *
  * Base URL:
- *   NEXT_PUBLIC_API_BASE_URL (e.g. .env.local: NEXT_PUBLIC_API_BASE_URL=http://localhost:8000)
+ *   API_BASE_URL (e.g. .env.local: API_BASE_URL=http://localhost:8000)
  *   Falls back to http://localhost:8000 for local dev.
  *
  * Backend contract (confirmed against the actual FastAPI source,
@@ -26,7 +26,7 @@
  * ============================================================
  */
 
-const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8000";
+const API_BASE = process.env.API_BASE_URL || "http://localhost:8000";
 const REQUEST_TIMEOUT_MS = 15000;
 
 /**
