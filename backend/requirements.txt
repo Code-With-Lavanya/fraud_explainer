@@ -21,7 +21,7 @@ pandas==2.3.1
 # Machine Learning
 # ----------------------------
 scikit-learn==1.7.1
-xgboost==3.2.0
+xgboost==2.1.4
 
 # ----------------------------
 # Explainable AI
