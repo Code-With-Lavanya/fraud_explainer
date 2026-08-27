@@ -211,27 +211,11 @@ This is a known prototype limitation and is planned for improvement.
 
 ------------------------------------------------------------------------
 
-# Known Limitations
-
-## 1. "Fraud Engine Unavailable"
-
-The frontend may currently display:
-
-``` text
-FRAUD ENGINE UNAVAILABLE
-```
-
-even when the deployed FastAPI backend and ML model are reachable.
-
-This is a known **frontend/backend health-state integration issue** and
-does not necessarily mean the fraud model is down.
-
 ### Planned fix
 
 Future versions will improve:
 
 -   Backend health detection
--   Frontend health synchronisation
 -   Cold-start handling
 -   Loading states
 -   API timeout handling
@@ -243,8 +227,6 @@ The goal is to distinguish between:
 ``` text
 Backend Online
 Backend Starting
-Backend Temporarily Unavailable
-Model Unavailable
 Request Failed
 ```
 
@@ -581,7 +563,6 @@ https://github.com/Code-With-Lavanya
   Swagger API Docs                     ✅ Available
   Vercel Deployment                    ✅ Live
   Render Deployment                    ✅ Live
-  Fraud Engine Availability UI         ⚠️ Known Issue
   Probability / Scenario Calibration   ⚠️ Known Limitation
   Production Banking Readiness         ❌ Not production-ready
 
